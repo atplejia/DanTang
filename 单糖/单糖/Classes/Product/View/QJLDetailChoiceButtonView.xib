@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vSr-Ci-XvY" customClass="QJLDetailChoiceButtonView" customModule="单糖" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlo-RV-L0u">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="图文介绍">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="introduceButtonClick:" destination="vSr-Ci-XvY" eventType="touchUpInside" id="iMc-UJ-0GB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFZ-3M-Dls">
+                    <rect key="frame" x="300" y="0.0" width="300" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="评论">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commentButtonClick:" destination="vSr-Ci-XvY" eventType="touchUpInside" id="QyB-Nl-Dnz"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDZ-SB-zw2">
+                    <rect key="frame" x="0.0" y="42" width="300" height="2"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.3294117647" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="162-Xp-FAP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-yc-23l">
+                    <rect key="frame" x="300" y="0.0" width="1" height="42"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Kr7-2R-ObM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KFZ-3M-Dls" secondAttribute="bottom" id="Ddd-Zg-iGH"/>
+                <constraint firstItem="gxW-yc-23l" firstAttribute="top" secondItem="vSr-Ci-XvY" secondAttribute="top" id="MK8-Gl-WwC"/>
+                <constraint firstItem="mlo-RV-L0u" firstAttribute="leading" secondItem="vSr-Ci-XvY" secondAttribute="leading" id="NCT-mp-vu5"/>
+                <constraint firstAttribute="bottom" secondItem="cDZ-SB-zw2" secondAttribute="bottom" id="QRT-1I-hNu"/>
+                <constraint firstItem="KFZ-3M-Dls" firstAttribute="top" secondItem="vSr-Ci-XvY" secondAttribute="top" id="bED-aI-puV"/>
+                <constraint firstItem="gxW-yc-23l" firstAttribute="leading" secondItem="KFZ-3M-Dls" secondAttribute="leading" id="c1d-8Q-tsH"/>
+                <constraint firstItem="mlo-RV-L0u" firstAttribute="top" secondItem="vSr-Ci-XvY" secondAttribute="top" id="d8l-NZ-IsA"/>
+                <constraint firstAttribute="bottom" secondItem="mlo-RV-L0u" secondAttribute="bottom" id="gU4-iG-Der"/>
+                <constraint firstItem="KFZ-3M-Dls" firstAttribute="width" secondItem="cDZ-SB-zw2" secondAttribute="width" id="uN2-iY-IkF"/>
+                <constraint firstAttribute="bottom" secondItem="gxW-yc-23l" secondAttribute="bottom" constant="2" id="ues-U1-wtV"/>
+                <constraint firstItem="KFZ-3M-Dls" firstAttribute="width" secondItem="mlo-RV-L0u" secondAttribute="width" id="wri-Ma-MBk"/>
+                <constraint firstAttribute="trailing" secondItem="KFZ-3M-Dls" secondAttribute="trailing" id="yH5-LI-AND"/>
+                <constraint firstItem="cDZ-SB-zw2" firstAttribute="leading" secondItem="vSr-Ci-XvY" secondAttribute="leading" id="yJb-3I-LmB"/>
+                <constraint firstItem="KFZ-3M-Dls" firstAttribute="leading" secondItem="mlo-RV-L0u" secondAttribute="trailing" id="yLq-6k-a2F"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentButton" destination="KFZ-3M-Dls" id="jUu-v5-cah"/>
+                <outlet property="leadingConstraint" destination="yJb-3I-LmB" id="6Xb-d4-cAZ"/>
+                <outlet property="lineView" destination="cDZ-SB-zw2" id="g0X-QQ-Vd3"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="173"/>
+        </view>
+    </objects>
+</document>

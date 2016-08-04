@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xJW-U7-qPZ" customClass="QJLCollectionTableViewCell" customModule="单糖" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xJW-U7-qPZ" id="uXr-bR-1xq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPY-eh-Erh">
+                        <rect key="frame" x="144" y="62" width="31" height="26"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYt-YF-K3g">
+                        <rect key="frame" x="8" y="8" width="304" height="134"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKR-X5-Ya3">
+                        <rect key="frame" x="13" y="115" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38g-nt-oGG">
+                        <rect key="frame" x="281" y="13" width="26" height="25"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Yt4-iJ-74a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="0" image="Feed_FavoriteIcon_17x17_"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="38g-nt-oGG" firstAttribute="trailing" secondItem="HYt-YF-K3g" secondAttribute="trailing" constant="-5" id="2St-mD-Ms2"/>
+                    <constraint firstItem="HYt-YF-K3g" firstAttribute="leading" secondItem="uXr-bR-1xq" secondAttribute="leadingMargin" id="53g-1Z-ArY"/>
+                    <constraint firstItem="eKR-X5-Ya3" firstAttribute="bottom" secondItem="HYt-YF-K3g" secondAttribute="bottom" constant="-5" id="G7W-6S-iaK"/>
+                    <constraint firstItem="HYt-YF-K3g" firstAttribute="top" secondItem="uXr-bR-1xq" secondAttribute="topMargin" id="a3b-i9-QJZ"/>
+                    <constraint firstItem="NPY-eh-Erh" firstAttribute="centerY" secondItem="uXr-bR-1xq" secondAttribute="centerY" id="bvZ-yY-9En"/>
+                    <constraint firstItem="eKR-X5-Ya3" firstAttribute="leading" secondItem="HYt-YF-K3g" secondAttribute="leading" constant="5" id="dZf-pC-XNy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HYt-YF-K3g" secondAttribute="bottom" id="fDl-55-Ova"/>
+                    <constraint firstItem="38g-nt-oGG" firstAttribute="top" secondItem="HYt-YF-K3g" secondAttribute="top" constant="5" id="iG2-H2-f8U"/>
+                    <constraint firstItem="NPY-eh-Erh" firstAttribute="centerX" secondItem="uXr-bR-1xq" secondAttribute="centerX" id="pUW-av-BdF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HYt-YF-K3g" secondAttribute="trailing" id="s5h-jP-PQR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="HYt-YF-K3g" id="oYk-Io-M3B"/>
+                <outlet property="likeButton" destination="38g-nt-oGG" id="6z1-3c-16i"/>
+                <outlet property="placeholderButton" destination="NPY-eh-Erh" id="4qu-by-KiK"/>
+                <outlet property="titleLabel" destination="eKR-X5-Ya3" id="Jtb-tt-cae"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="225"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Feed_FavoriteIcon_17x17_" width="17" height="17"/>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+    </resources>
+</document>
